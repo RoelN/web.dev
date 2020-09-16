@@ -11,15 +11,17 @@ alt: A wall with a bunch of image frames in different sizes.
 date: 2019-09-30
 tags:
   - blog # blog is a required tag for the article to show up in the blog.
-  - fast
+  - performance
   - images
+feedback:
+  - api
 ---
 
 This article gives me an opportunity to discuss two of my favorite things: responsive images *and* preload. As someone who was heavily involved in developing both of those features, I'm super excited to see them working together!
 
 ## Responsive images overview
 
-Suppose you're browsing the web on a screen that's 300 pixels wide, and the page just requested an image that's 1500 pixels wide. That page just wasted a lot of your cellular data because your screen can't do anything with all of that extra resolution. Ideally, the browser should fetch a version of the image that's just a *little* wider than your screen size, say 325 pixels. This ensures a high-resolution image without wasting data. And, even better, the image will load faster. [Responsive images](/serve-responsive-images/#serve-multiple-image-versions) enable browsers to fetch different image resources to different devices. If you don't use an [image CDN](/image-cdns/) need to save multiple dimensions for each image and specify them in the `srcset` attribute. The `w` value tells the browser the width of each version. Depending on the device, the browser can choose the appropriate one:
+Suppose you're browsing the web on a screen that's 300 pixels wide, and the page just requested an image that's 1500 pixels wide. That page just wasted a lot of your cellular data because your screen can't do anything with all of that extra resolution. Ideally, the browser should fetch a version of the image that's just a *little* wider than your screen size, say 325 pixels. This ensures a high-resolution image without wasting data. And, even better, the image will load faster. [Responsive images](/serve-responsive-images/#serve-multiple-image-versions) enable browsers to fetch different image resources to different devices. If you don't use an [image CDN](/image-cdns/) you need to save multiple dimensions for each image and specify them in the `srcset` attribute. The `w` value tells the browser the width of each version. Depending on the device, the browser can choose the appropriate one:
 
 ```html
 <img src="small.jpg" srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 1500w" alt="…">

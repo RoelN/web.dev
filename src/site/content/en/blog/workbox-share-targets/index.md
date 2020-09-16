@@ -14,9 +14,10 @@ alt: Two pairs of hands holding a cup of tomatoes.
 tags:
   - blog
   - capabilities
-  - fugu
   - workbox
   - test-post
+feedback:
+  - api
 ---
 
 The [Web Share Target API](https://web.dev/web-share-target/) lets you display

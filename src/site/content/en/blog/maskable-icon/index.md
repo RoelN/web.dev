@@ -13,8 +13,9 @@ alt: Icons contained inside white circles compared to icons covering its entire 
 tags:
   - blog
   - capabilities
-  - fugu
   - progressive-web-apps
+feedback:
+  - api
 ---
 
 ## What are maskable icons? {: #what }

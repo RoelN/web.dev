@@ -14,6 +14,8 @@ description: |
 tags:
   - blog
   - web-bundles
+feedback:
+  - api
 ---
 
 Bundling a full website as a single file and making it shareable
@@ -39,7 +41,7 @@ images, or stylesheets.
 
  Web Bundles, more formally known as [Bundled HTTP
  Exchanges](https://wicg.github.io/webpackage/draft-yasskin-wpack-bundled-exchanges.html),
- are part of the [Web Packaging](https://goto.google.com/webpackaging-one-pager)
+ are part of the [Web Packaging](https://github.com/WICG/webpackage)
  proposal.
 
 <figure class="w-figure">
